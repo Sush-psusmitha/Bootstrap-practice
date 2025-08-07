@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System in Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <!-- it will take the equal space -->
+    <div class="row">
+        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quam.</div>
+        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quam.</div>
+        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quam.</div>
+        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quam.</div>
+        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quam.</div>
+        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quam.</div>
+    </div>
+    <hr>
+    <!-- will divided into 2 first one will take 9 column space, 2d column will take 3 -->
+    <div class="row">
+        <div class="col col-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quam.</div>
+        <div class="col col-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quam.</div>
+    </div>
+    <hr>
+
+     <!-- 
+        On small screens: both columns are full width.
+        On medium: split 6/6.
+        On large: 4/8 split.        
+       -->
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias velit laudantium nulla perspiciatis deserunt ullam quod iusto natus obcaecati eligendi odio aspernatur eaque sit, praesentium rem, cupiditate repudiandae. Eligendi, vel!</div>
+        <div class="col-12 col-md-6 col-lg-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, itaque voluptatum! Voluptate minima est accusamus cum quis laborum, deserunt consequatur!</div>
+    </div>
+    <hr>
+    <h1> Offset Columns</h1>
+    <p>To move columns to the right using offsets:</p>
+
+    <!-- md nuhnchi c-l-md chesi offset md ki isthey dhani below unna size ki each 12 col space thiskuntadhi -->
+    <div class="row">
+        <div class=" col-md-4 offset-md-2" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsa.</div>
+        <div class=" col-md-4 offset-md-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos illo doloremque error ratione quaerat sequi fugiat iste nam, perspiciatis officia numquam recusandae vitae suscipit. Neque, consectetur deleniti! Inventore, est?</div>
+    </div>
+ </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

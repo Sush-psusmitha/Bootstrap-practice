@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography in Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <style>
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+  </style>
+
+</head>
+<body>
+
+    <div class="container">
+      <h1>🔤 1. Headings (h1 to h6)</h1>
+      <p >using p tag and giving <code>class='h1'</code> we can achive the h1 styles for p tag</p>
+      <p> can apply heading styles to any element using .h1 to .h6 classes:</p>
+      
+      <p class="h1"> bootstrap h1 heading</p>
+      <p class="h2"> bootstrap h2 heading</p>
+      <p class="h3"> bootstrap h3 heading</p>
+      <p class="h4"> bootstrap h4 heading</p>
+      <p class="h5"> bootstrap h5 heading</p>
+      <p class="h6"> bootstrap h6 heading</p>
+    
+      <hr>
+      <h1>✍️ 2. Display Headings</h1>
+      <p>Bigger and bolder headings for landing pages or titles:</p>
+      <p class="display-1">Display heading 1</p>
+      <p class="display-2">Display heading 2</p>
+      <p class="display-3">Display heading 3</p>
+      <p class="display-4">Display heading 4</p>
+      <p class="display-5">Display heading 5</p>
+      <p class="display-6">Display heading 6</p>
+    <hr>
+
+    <h1>📃 3. Paragraphs and Lead Text</h1>
+    <h3>Lead text adds emphasis and slightly larger font:</h3>
+   <p class="lead">this is a lead pagragraph</p>
+
+   <h3>Small text:</h3>
+   <small>this is small text</small>
+   
+   <hr>
+
+<h1>Text Alignments </h1>
+<p>Use text alignment utility classes: text-start, text-center, text-end</p>
+<div class="container" style="width: 300px; height: 120px; border: 1px solid #000000;">
+  <p class="text-start">this is start </p>
+  <p class="text-center">this is center</p>
+  <p class="text-end">this is end</p>
+</div>
+  
+<hr>
+
+<h1>🎨 Text Colors and background Colors</h1>
+<p>Use Bootstrap’s text color classes:</p>
+
+<div class="container">
+<h3 class="text-primary bg-warning"> bg-warning Primary Text Color</h3>
+<h3 class="text-danger bg-primary">Danger Text Color</h3>
+<h3 class="text-muted bg-success">Muted Text Color</h3>
+<h3 class="text-success bg-danger">text-success, Text Color</h3>
+<h3 class="text-warning bg-info ">text-warning, Text Color</h3>
+<h3 class="text-info bg-dark ">text-info, Text Color</h3>
+<h3 class="text-dark bg-muted">text-dark, Text Color</h3>
+<h3 class="text-light bg-dark">text-light, Text Color</h3>
+</div>
+<hr>
+<h1>🔡 6. Font Weight & Style</h1>
+
+<div class="container">
+    <h2>Font weight: </h2>
+    <ul>
+        <li>.fw-bold → bold</li>
+        <li>.fw-semibold</li>
+        <li>.fw-normal</li>
+        <li>.fw-light</li>
+        <li>.fw-lighter</li>
+    </ul>
+
+    <h2>Font style:</h2>
+    <ul>
+        <li>.fst-italic</li>
+        <li>.fst-normal</li>
+    </ul>
+    <p class="fw-bold fst-italic">Bold and italic text</p>
+    <p class="fw-semibold">semi bold</p>
+   <hr>
+
+   <h1>🔠 7. Text Transform</h1>
+   <ul>
+    <li>text-uppercase</li>
+    <li>text-lowercase</li>
+    <li>text-capitalize</li>
+   </ul>
+<p class="text-uppercase">uppercase</p>
+<p class="text-lowercase">LOWERCASE</p>
+<p class="text-capitalize">capitalize 1st letter in each word </p>
+<hr>
+
+</div>
+
+
+<h1>📏 8. Line Height and Truncation</h1>
+<p>Line height classes:</p>
+<ul>
+    <li>.lh-1</li>
+    <li>.lh-sm</li>
+    <li>.lh-base</li>
+    <li>.lh-lg</li>
+</ul>
+
+<div class="container" style="width: 300px;  border: 1px solid #000000;">
+ <p class="lh-lg ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam odio necessitatibus est facilis officiis, autem similique, sunt, odit unde fugiat quaerat at temporibus eligendi accusantium suscipit sequi. Illum, nisi laudantium.</p>
+</div>
+
+<h2>Truncate overflowing text:</h2>
+<p>untill the specified width text will show up then ... will come</p>
+<p class="text-truncate" style="max-width: 300px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias earum perferendis quisquam officiis sequi ipsam dicta ut at, assumenda aliquid voluptatibus repellat maxime odio laudantium voluptate! Corrupti minus, ea assumenda quasi est natus, aspernatur omnis, placeat perferendis fugiat nemo quam! Iste, reprehenderit a debitis tempora aliquid numquam qui molestiae voluptatem quae, architecto repellat suscipit. Asperiores, rem blanditiis praesentium reprehenderit molestias dolores! Assumenda nisi cum impedit ad corrupti natus iste nesciunt explicabo ipsum nobis accusantium repellendus officia quas corporis esse, doloribus voluptatem eligendi enim fuga neque necessitatibus aliquam harum! Perferendis eos commodi quaerat veritatis incidunt, pariatur rem error delectus est quisquam.</p>
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
