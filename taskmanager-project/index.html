@@ -37,13 +37,13 @@
 <main>
     <div class="container">
        <!-- button: for triggering actions -->
-        <button class="btn btn-outline-primary" type="button">Add Task</button>
+        <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#addTaskModal">Add Task</button>
        
         <!-- cards | list-groups | badges-->
 
         <div class="card mt-3">
             <div class="card-header">Task List</div>
-             <div class="card-body">
+              <div class="card-body">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item active d-flex justify-content-between align-items-center">
                        <!--  -->
@@ -57,14 +57,14 @@
                             Task 3 <span class="badge bg-danger rounded-pill ">Cancelled</span>
                         </li>
                 </ul>
-            </div>
-
+             </div>
             <!-- Model pop ups -->
-             <div class="modal" style="display: block;" id="addTaskModal">
+              <div class="modal fade" id="addTaskModal">
                  <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h5>Add Task</h5>
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title">Add Task</h5>
+                            <button type="button" class="btn-close " data-bs-dismiss="modal"></button>
                         </div>
                         <div class="modal-body">
                             <form action="">
@@ -80,24 +80,52 @@
 
                                  <div class="mb-3"> 
                                  <label class="form-label" for="select" class="">Task Status:</label>
-                                  <select class="form-control" name="options" id="select">
+                                  <select class="form-select" name="options" id="select">
                                     <option selected>New</option>
                                     <option>In Progress</option>
                                     <option>Completed</option>
                                     <option>Cancelled</option>
                                   </select>   
                                 </div>
-
                             </form> 
                         </div>
                         <div class="modal-footer">
-                            <button>Save Task</button>
-                            <button>Close</button>
+                            <button type="button" class="btn btn-primary">Save Task</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                  </div>
-             </div>
-        </div>   
+              </div>
+        </div>  
+
+        <!-- Dropdown -->
+        <div class="dropdown my-3">
+             <button class=" btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">Actions</button>
+             <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Edit Task</a></li>
+                <li><a class="dropdown-item" href="#">Delete Tast</a></li>
+                 <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Mark as Completed</a></li>
+             </ul>
+        </div>
+
+        <!-- Navs & Tabs -->
+         <ul class="nav nav-tabs">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#alltask">All Tasks</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle ="tab" data-bs-target="#completedtask">Completed Tasks</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#pendingtask">Pending Tasks</button></li>
+         </ul>
+         <div class="tab-content  mt-2">
+            <div class="tab-pane fade show active" id="alltask">
+                <p>All the tasks displayed here!</p>
+            </div>
+            <div class="tab-pane fade" id="completedtask">
+                <p>Completed tasks displayed here!</p>
+            </div>
+            <div class="tab-pane fade" id="pendingtask">
+                <p>Pending tasks displayed here!</p>
+            </div>
+         </div>
     </div>
 </main>
 
